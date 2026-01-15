@@ -1,10 +1,9 @@
 from django.contrib import admin
 from parler.admin import TranslatableAdmin
-from django.http import JsonResponse
-import requests
-from django.forms.models import model_to_dict
 
-from .models import Config, About, RequestInfo
+
+import requests
+from .models import Config, About, RequestInfo, Project, ProjectImage
 
 # Register your models here.
 @admin.register(Config)
@@ -44,3 +43,15 @@ class RequestAdmin(admin.ModelAdmin) :
             #JsonResponse(model_to_dict(data))
         return super().change_view(request, object_id, form_url, extra_context)
         #JsonResponse({"a" : "74848 ffe", 'data' : model_to_dict(data)})
+
+class ImageInline(admin.TabularInline):
+    model = ProjectImage
+    extra = 0
+
+@admin.register(Project)
+class ProjectAdmin(TranslatableAdmin):
+    list_display = ['title', 'id', 'visible', 'updated']
+    list_filter = ['visible', 'updated']
+    list_editable = ['visible']
+
+    inlines = [ImageInline]

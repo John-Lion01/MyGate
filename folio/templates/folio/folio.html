@@ -107,7 +107,7 @@
         </div>
         <div class="home-2">
             {% if config.main_image %}
-            <img src="{{ config.main_image.url }}" alt="" width="300px">
+            <img src="{{ config.main_image.url }}" class="main-image" alt="" width="300px">
             {% endif %}
         </div>
     </section>
@@ -137,6 +137,10 @@
                 </p>
             </div>
         </div>
+    </section>
+
+    <section>
+        <h1 class="s-title">{% translate 'Projets mis en Avant' %}</h1>
     </section>
 </div>
 </body>

@@ -38,3 +38,29 @@ class RequestInfo(models.Model) :
 
     def __str__(self):
         return f"conn : {self.url}; {self.when}"
+
+class Project(TranslatableModel) :
+    translation = TranslatedFields(
+        title = models.CharField(),
+        description = models.CharField()
+    )
+
+    visible = models.BooleanField(default=False)
+    github = models.URLField(blank=True)
+    web = models.URLField(blank=True)
+
+    created = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f"{self.title}"
+
+class ProjectImage(models.Model) :
+    image = models.ImageField(
+        upload_to='folio/projects'
+    )
+    project = models.ForeignKey(
+        Project,
+        related_name='images',
+        on_delete=models.CASCADE
+    )
