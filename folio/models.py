@@ -13,3 +13,13 @@ class Config(TranslatableModel) :
 
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
+
+class About(TranslatableModel) :
+    translation =TranslatedFields(
+        text1 = models.TextField(),
+        text2 = models.TextField(),
+        text3 = models.TextField()
+    )
+
+    created = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)

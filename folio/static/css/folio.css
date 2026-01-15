@@ -187,3 +187,73 @@ h1.s-title {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+#about .pg {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#about p {
+  color: #ddd;
+  justify-self: flex-start;
+  text-align: start;
+  font-size: 20px;
+  letter-spacing: -0.005em;
+  justify-self: center;
+  line-height: 145%;
+  max-width: 800px;
+  display: flex;
+}
+#about .start p {
+  justify-self: flex-start;
+  align-items: center;
+}
+#about .middle p {
+  justify-self: end;
+  align-items: center;
+}
+#about .end p {
+  justify-self: center;
+  align-items: center;
+}
+div.img {
+  display: flex;
+  text-align: center;
+  padding: 10px;
+}
+div.img img {
+  align-self: center;
+  border: #0077cc;
+  max-width: 300px;
+  animation: rotation 8s linear infinite;
+}
+div.img img:hover {
+  cursor: pointer;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width:1200px) {
+  #about {
+    padding: 50px;
+  }
+}
+@media (max-width:768px) {
+  #about .start {
+    flex-direction: column;
+  }
+  #about .middle {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  div.img {
+    align-self: center;
+  }
+}
