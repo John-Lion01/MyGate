@@ -5,5 +5,6 @@ app_name = 'folio'
 
 urlpatterns = [
     path('folio', views.home, name='home'),
-    path('', views.folio, name='folio')
+    path('', views.folio, name='folio'),
+    path('test', views.test, name='test'),
 ]
