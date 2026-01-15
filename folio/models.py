@@ -30,6 +30,9 @@ class RequestInfo(models.Model) :
     ip = models.CharField()
     when = models.DateTimeField()
 
+    country = models.CharField(blank=True,null=True)
+    town = models.CharField(blank=True,null=True)
+
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 

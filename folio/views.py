@@ -9,9 +9,11 @@ from django.forms.models import model_to_dict
 def save_request(request : WSGIRequest) :
     x_forwarded_for = request.META.get("HTTP_X_FORWARDED_FOR")
     ip = x_forwarded_for.split(',')[0] if x_forwarded_for else request.META.get('REMOTE_ADDR')
+    url : str = request.build_absolute_uri()
+
     data = RequestInfo(
         domain = request.get_host(),
-        url = request.build_absolute_uri(),
+        url = url,
         ip =  ip,
         when = timezone.now()
     )
