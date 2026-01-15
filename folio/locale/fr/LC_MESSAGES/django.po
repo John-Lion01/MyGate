@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-12 12:27+0000\n"
+"POT-Creation-Date: 2026-01-15 01:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,34 +18,38 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: .\folio\templates\folio\folio.html:24 .\folio\templates\folio\folio.html:42
+#: .\folio\templates\folio\folio.html:27 .\folio\templates\folio\folio.html:47
 msgid "Portfolio"
 msgstr ""
 
-#: .\folio\templates\folio\folio.html:52
+#: .\folio\templates\folio\folio.html:57
 msgid "Accueil"
 msgstr ""
 
-#: .\folio\templates\folio\folio.html:55
+#: .\folio\templates\folio\folio.html:60
 msgid "À Propos"
 msgstr ""
 
-#: .\folio\templates\folio\folio.html:58
+#: .\folio\templates\folio\folio.html:63
 msgid "Projets"
 msgstr ""
 
-#: .\folio\templates\folio\folio.html:61
+#: .\folio\templates\folio\folio.html:66
 msgid "Compétences"
 msgstr ""
 
-#: .\folio\templates\folio\folio.html:64 .\folio\templates\folio\folio.html:99
+#: .\folio\templates\folio\folio.html:69 .\folio\templates\folio\folio.html:105
 msgid "Contact"
 msgstr ""
 
-#: .\folio\templates\folio\folio.html:76
+#: .\folio\templates\folio\folio.html:81
 msgid "FR/EN"
 msgstr ""
 
-#: .\folio\templates\folio\folio.html:98
+#: .\folio\templates\folio\folio.html:104
 msgid "Mes Projets"
+msgstr ""
+
+#: .\folio\templates\folio\folio.html:116
+msgid "À Propos de moi"
 msgstr ""

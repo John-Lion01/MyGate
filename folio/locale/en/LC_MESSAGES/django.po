@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-12 12:27+0000\n"
-"PO-Revision-Date: 2026-01-11 23:38+0000\n"
-"Last-Translator:   <>\n"
+"POT-Creation-Date: 2026-01-15 01:32+0000\n"
+"PO-Revision-Date: 2026-01-15 01:33+0000\n"
+"Last-Translator:   <jeansdjanta@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -19,47 +19,50 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.10.3\n"
 
-#: .\folio\templates\folio\folio.html:24 .\folio\templates\folio\folio.html:42
+#: .\folio\templates\folio\folio.html:27 .\folio\templates\folio\folio.html:47
 msgid "Portfolio"
 msgstr "Portfolio"
 
-#: .\folio\templates\folio\folio.html:52
+#: .\folio\templates\folio\folio.html:57
 msgid "Accueil"
 msgstr "Home"
 
-#: .\folio\templates\folio\folio.html:55
+#: .\folio\templates\folio\folio.html:60
 msgid "À Propos"
 msgstr "About"
 
-#: .\folio\templates\folio\folio.html:58
+#: .\folio\templates\folio\folio.html:63
 msgid "Projets"
 msgstr "Projects"
 
-#: .\folio\templates\folio\folio.html:61
+#: .\folio\templates\folio\folio.html:66
 msgid "Compétences"
 msgstr "Skills"
 
-#: .\folio\templates\folio\folio.html:64 .\folio\templates\folio\folio.html:99
+#: .\folio\templates\folio\folio.html:69
+#: .\folio\templates\folio\folio.html:105
 msgid "Contact"
 msgstr "Contact"
 
-#: .\folio\templates\folio\folio.html:76
+#: .\folio\templates\folio\folio.html:81
 msgid "FR/EN"
 msgstr "EN/FR"
 
-#: .\folio\templates\folio\folio.html:98
+#: .\folio\templates\folio\folio.html:104
 msgid "Mes Projets"
 msgstr "My Projects"
+
+#: .\folio\templates\folio\folio.html:116
+#| msgid "À Propos"
+msgid "À Propos de moi"
+msgstr "About Me"
 
 #~ msgid ""
 #~ "\n"
 #~ "                Passionné de la cyber sécurité et de la Programmation, \n"
-#~ "                j'ai une base solide en langage de programmation comme "
-#~ "Python, C, Java, JavaScript\n"
+#~ "                j'ai une base solide en langage de programmation comme Python, C, Java, JavaScript\n"
 #~ "                et en programmation web.\n"
 #~ "                "
 #~ msgstr ""
 #~ "\n"
-#~ "Passionate about cybersecurity and programming, I have a solid foundation "
-#~ "in programming languages ​​such as Python, C, Java, JavaScript and in web "
-#~ "programming."
+#~ "Passionate about cybersecurity and programming, I have a solid foundation in programming languages ​​such as Python, C, Java, JavaScript and in web programming."
