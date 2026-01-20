@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-18 10:24+0000\n"
+"POT-Creation-Date: 2026-01-20 10:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\folio\forms.py:12
+msgid "Nom et prénom"
+msgstr ""
+
+#: .\folio\forms.py:21
+msgid "address e-mail"
+msgstr ""
+
+#: .\folio\forms.py:30
+msgid "Sujet"
+msgstr ""
+
+#: .\folio\forms.py:39
+msgid "Entrer votre message ..."
+msgstr ""
 
 #: .\folio\templates\folio\folio.html:28 .\folio\templates\folio\folio.html:48
 msgid "Portfolio"
@@ -66,14 +82,55 @@ msgstr ""
 msgid "Details"
 msgstr ""
 
+#: .\folio\templates\folio\folio.html:186
+msgid "Informations de contact"
+msgstr ""
+
+#: .\folio\templates\folio\folio.html:190
+msgid "E-mail :"
+msgstr ""
+
+#: .\folio\templates\folio\folio.html:210
+msgid "Vous avez un projet ?"
+msgstr ""
+
+#: .\folio\templates\folio\folio.html:212
+msgid "Discutons de votre idée et construisons une solution adaptée."
+msgstr ""
+
 #: .\folio\templates\folio\folio.html:215
+msgid "Envoyer un e-mail"
+msgstr ""
+
+#: .\folio\templates\folio\folio.html:222
+msgid "Contactez-moi"
+msgstr ""
+
+#: .\folio\templates\folio\folio.html:224
+msgid ""
+"\n"
+"                        Vous avez un projet, une idée ou une question ?\n"
+"                        Envoyez-moi un message et je vous répondrai "
+"rapidement.\n"
+"                    "
+msgstr ""
+
+#: .\folio\templates\folio\folio.html:236
+msgid "Envoyer le message"
+msgstr ""
+
+#: .\folio\templates\folio\folio.html:282
 msgid "Technologies utilisées"
 msgstr ""
 
-#: .\folio\templates\folio\folio.html:223
+#: .\folio\templates\folio\folio.html:290
 msgid "Voir le site web"
 msgstr ""
 
-#: .\folio\templates\folio\folio.html:230
+#: .\folio\templates\folio\folio.html:297
 msgid "Voir le code source"
+msgstr ""
+
+#: .\folio\views.py:63
+msgid "Message enregistrer avec succès"
 msgstr ""

@@ -72,3 +72,15 @@ class ProjectImage(models.Model) :
         related_name='images',
         on_delete=models.CASCADE
     )
+
+class Message(models.Model) :
+    full_name = models.CharField()
+    email = models.EmailField()
+    sujet = models.CharField()
+    message = models.TextField()
+
+    created = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f"{self.full_name} : {self.sujet}"

@@ -7,4 +7,5 @@ urlpatterns = [
     path('folio', views.home, name='home'),
     path('', views.folio, name='folio'),
     path('test', views.test, name='test'),
+    path('message/api', views.message, name='message')
 ]

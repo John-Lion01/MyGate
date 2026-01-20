@@ -179,11 +179,78 @@
         </div>
     </section>
 
+    <section id="contact">
+        <div class="contact-container">
+            <!-- Infos -->
+            <div class="contact-info">
+                <h2>{% translate 'Informations de contact' %} </h2>
+
+                <ul>
+                    <li>
+                        <strong>{% translate 'E-mail :' %} </strong> 
+                        <a href="mailto:jeansdjanta@hotmail.com" target="_blank"> 
+                            jeansdjanta@hotmail.com 
+                        </a>
+                    </li>
+                    <li>
+                        <strong>GitHub : </strong> 
+                        <a href="https://github.com/John-Lion01/" target="_blank">
+                            John-Lion01
+                        </a>
+                    </li>
+                    <li>
+                        <strong>LinkedIn : </strong>
+                        <a href="https://www.linkedin.com/in/jean-djanta-132206338" target="_blank">
+                            jean-djanta-132206338
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="contact-cta">
+                    <h3>{% translate 'Vous avez un projet ?' %} </h3>
+                    <p>
+                        {% translate 'Discutons de votre idée et construisons une solution adaptée.' %}
+                    </p>
+                    <a href="mailto:jeansdjanta@hotmail.com" class="btn-primary">
+                        {% translate 'Envoyer un e-mail' %}
+                    </a>
+                </div>
+            </div>
+
+            <!-- Formulaire -->
+            <div class="contact-form" id="let-talk">
+                <h2>{% translate 'Contactez-moi' %} </h2>
+                <p>
+                    {% blocktranslate %}
+                        Vous avez un projet, une idée ou une question ?
+                        Envoyez-moi un message et je vous répondrai rapidement.
+                    {% endblocktranslate %}
+                </p>
+
+                <form id="contact-form" name="contact" method="post" url="{% url 'folio:message' %}">
+                    {% csrf_token %}
+
+                    {{ contact.as_p }}
+                    
+                    <button type="submit" class="btn-primary">
+                        <span>{% translate 'Envoyer le message' %} </span>
+                    </button>
+                </form>
+            </div>
+                
+            <div class="popup">
+                <ul></ul>
+            </div>                
+        </div>
+    </section>
+
+
     <footer>
         <p>© 2025 Jean DJANTA. Tous droits réservés.</p>
     </footer>
 </div>
 <script src="{% static 'js/folio.js' %}"></script>
+<script src="{% static 'js/message.js' %}"></script>
 
 <!-- <div class="overlay"> -->
 <div class="project-detail">

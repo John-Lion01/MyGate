@@ -1,9 +1,8 @@
 from django.contrib import admin
 from parler.admin import TranslatableAdmin
-
-
 import requests
-from .models import Config, About, RequestInfo, Project, ProjectImage
+from .models import Config, About, RequestInfo, Project, ProjectImage, Message
+
 
 # Register your models here.
 @admin.register(Config)
@@ -55,3 +54,12 @@ class ProjectAdmin(TranslatableAdmin):
     list_editable = ['visible', 'top']
 
     inlines = [ImageInline]
+
+@admin.register(Message)
+class MessageAdmin(admin.ModelAdmin) :
+    list_display = ["full_name", "email", "sujet", "updated"]
+    list_filter = ["sujet", "updated", "email"]
+    readonly_fields = ["full_name", "email", "sujet", "message", "created"]
+
+    def has_add_permission(self, request):
+        return False
